@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="imagenes/favicon.png" type="image/x-icon">
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/stilye.css">
+    <title>Alura Geek</title>
+</head>
+<body>
+    <header>
+        <h1 class="tituloCabeza">AluraGeek</h1>
+        <div class="span">
+            <span class="alura">Alura</span><span class="shop">Shop</span>
+        </div>
+    </header>
+    <main class="contenedor-principal">
+        <!-- Sección de lista de productos -->
+        <section>
+            <h1 class="tituloSeccion">Mis productos</h1>
+            <div data-producto class="contenedor-productos">
+                <!-- Aquí se renderizarán las tarjetas dinámicamente -->
+            </div>
+        </section>
+
+        <!-- Sección de agregar productos -->
+        <section class="seccion-formular">
+            <h1 class="tituloSeccion">Agregar productos</h1>
+            <form class="formulario" data-formulario>
+                <div class="contenedor-input">
+                    <input data-nombre placeholder="Nombre del producto..." type="text"> 
+                    <input data-precio placeholder="Precio del producto..." type="text"> 
+                    <input data-imagen placeholder="URL de la imagen..." type="text"> 
+                    <span data-mensaje class="mensaje-error"></span>
+                </div>
+                <div class="contenedor-btn">
+                    <button type="submit" class="btn-enviar" id="boton">Enviar</button>
+                    <button type="reset" class="btn-limpiar" id="boton">Limpiar</button>
+                </div>
+            </form>
+        </section>
+    </main>
+    <footer>
+        <div class="logo-footer">
+            <a href="https://github.com/Andry-Batista-Gabriel/Alura-Geek.git" target="_blank">
+                <img src="imagenes/derechos-de-autor.png" alt="Logo" class="logo-img">
+            </a>
+        </div>
+        <p class="texto-footer">2024 AluraShort - Todos los derechos reservados</p>
+    </footer>
+    <script type="module" src="js/controles/main.js"></script>
+</body>
+</html>
